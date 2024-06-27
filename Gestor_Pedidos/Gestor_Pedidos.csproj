@@ -72,7 +72,10 @@
     <Content Include="Recursos\CSS\Estilos.css" />
     <Content Include="Recursos\CSS\EstilosPedido.css" />
     <Content Include="Registro.aspx" />
+    <Content Include="VPedidos.aspx" />
+    <Content Include="VPerfil.aspx" />
     <Content Include="Web.config" />
+    <Content Include="NavigationBar.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Login.aspx.cs">
@@ -98,6 +101,27 @@
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Compile Include="VPedidos.aspx.cs">
+      <DependentUpon>VPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VPedidos.aspx.designer.cs">
+      <DependentUpon>VPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VPerfil.aspx.cs">
+      <DependentUpon>VPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VPerfil.aspx.designer.cs">
+      <DependentUpon>VPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar.ascx.cs">
+      <DependentUpon>NavigationBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigationBar.ascx.designer.cs">
+      <DependentUpon>NavigationBar.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

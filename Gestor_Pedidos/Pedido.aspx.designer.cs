@@ -24,6 +24,15 @@ namespace Gestor_Pedidos
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control NavigationBar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::Gestor_Pedidos.NavigationBar NavigationBar;
+
+        /// <summary>
         /// Control lblSeleccionarProductos.
         /// </summary>
         /// <remarks>

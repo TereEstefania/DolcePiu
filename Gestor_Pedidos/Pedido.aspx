@@ -1,15 +1,17 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pedido.aspx.cs" Inherits="Gestor_Pedidos.Pedido" %>
+<%@ Register Src="NavigationBar.ascx" TagPrefix="uc" TagName="NavigationBar" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link href="/Recursos/CSS/EstilosPedido.css" rel="stylesheet" type="text/css" />
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Realizar Pedido</title>
+    <link href="/Recursos/CSS/EstilosPedido.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <uc:NavigationBar ID="NavigationBar" runat="server" />
             <div class="background-div">
                 <strong><asp:Label ID="lblSeleccionarProductos" runat="server" Text="Seleccionar productos:"></asp:Label></strong>
                 <br />
