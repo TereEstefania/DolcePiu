@@ -110,7 +110,11 @@ namespace Gestor_Pedidos
                 lblError.Text = "Por favor, selecciona una zona.";
             }
         }
+        protected void BtnCerrar_Click(object sender, EventArgs e)
+        {
 
+            Response.Redirect("Login.aspx");
+        }
     }
 
 }
