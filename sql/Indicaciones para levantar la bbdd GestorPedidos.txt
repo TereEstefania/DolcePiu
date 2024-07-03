@@ -1,0 +1,15 @@
+1 - Primero se debe abrir y ejecutar los distintos scripst que contiene el archivo: 
+Scripts para Creación de Base de Datos
+Con esta accion se llevara a cabo la creacion de la base de datos y las distintas tablas que contiene la misma. 
+
+2 - Segundo de debe abrir y ejecutar los scripts para la creacion de los store procedures:
+SP_AgregarUsuario
+SP_CredencialUsuario
+SP_ValidarCredencialUsuario
+Con esta ejecucion se crearan los procedimientos almacenados que se ejecutaran 
+	en la seccion Registro para almacenar las credenciales y los datos del usuario en sus respectivas tablas.
+	en la seccion Login para hacer la validacion de las credenciales del usuario que intenta loguearse con las credenciales almacenadas. 
+
+3 - Tercero se debe abrir y ejecutar el archivo:
+Inserts para las tablas - Datos 
+Con esta ejecucion se cargaran datos necesarios en diversas tablas, los cuales se consumiran en el flujo interno del sistema. 
