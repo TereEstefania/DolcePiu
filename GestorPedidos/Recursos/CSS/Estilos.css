@@ -1,26 +1,465 @@
-﻿body {
+body {
+    margin: 0;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+/*estilos de login, registro y generales */
+.bg-imag {
+    background-image: url(../img/vitrina-helados.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.light {
+    background-color: rgb(213, 22, 14, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor-imagen {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 10%;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.container-hero h1 {
+    color: white;
+    font-size:5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
-    min-height: 100%;
-    padding: 20px
+    min-height: 90%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#form-content {
-    -webkit-border-radius: 10px, 10px, 10px, 10px;
-    border-radius: 10px, 10px, 10px, 10px;
-    background: #fff;
-    padding: 30px;
-    width: 90%;
-    max-width: 450px;
-    position: relative;
-    padding: 0px;
-    -webkit-box-shadow: 0, 30px, 60px, 0 rgba(0,0,0,0.3);
-    box-shadow: 0, 30px, 60px, 0 rgba(0,0,0,0.3);
-    text-align: center;
+.extra{
+    justify-content: center;
 }
+.titulo {
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin: 4% 0;
+}
+
+.formcontent {
+    align-items: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px 20px 20px;
+    width: 30vw;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    font-size: 1.5vh;
+    min-height: 30vh;
+}
+
+.control {
+    background-color: transparent;
+    width: contain;
+    color: #26170B;
+}
+
+.reg {
+    margin-bottom: 0.5vh;
+    font-weight: 600;
+}
+
+.inputs {
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+.form-control {
+    border-color: #DB8569;
+}
+
+.grids {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1vw;
+    margin: 10px 0 10px 0;
+}
+
+.pop {
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.lbtn {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.row-btn {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #DB8569;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px 0 10px 0;
+}
+
+.rec-cont {
+    background-color: transparent;
+    border: none;
+    font-size: 1vw;
+    color: #7D4A28;
+    font-weight: 600;
+}
+
+.error {
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #D51611;
+}
+
+/* estilos pagina home*/
+
+/* cabecera */
+
+.container-cabeza {
+    width: 100%; 
+}
+
+.container-hero {
+    width: 100%;
+    background-image: url(/Recursos/img/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.b-nav {
+    width: 10%;
+}
+/* seccion central */
+.seccion-prime {
+    margin: 8vw 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-seccion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    width: 80%;
+    height: 30%;
+}
+
+.container-i {
+    display: flex;
+}
+.container-i img {
+    width: 70%;
+    margin: 1vw;
+}
+
+.p-seccion {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: start;
+  height:20vh;
+    width:80%;
+}
+.subtitulos {
+    text-align: justify;
+    font-size: 3vh;
+    font-weight: 600;
+    margin: 10px;
+}
+.p-seccion p {
+    width: 80%;
+    margin: 1vw;
+    font-size: larger;
+}
+/* pie de pagina */
+.pie {
+    padding: 10vw 0;
+    display: flex;
+    align-items: center;
+    background-color: #26170B;
+    color: whitesmoke;
+}
+
+.container-foot {
+    display: grid;
+    justify-content: center;
+    justify-items:center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    width: 100%;
+
+}
+
+.redes-foot {
+    display: grid;
+    justify-content: start;
+    justify-items: center;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.logo-link {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    width: 100%;
+}
+
+.img-logos {
+    width: 5vh;
+}
+
+.h {
+    color: whitesmoke;
+    font-size: larger;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.contacto {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+/* Estilos pagina nosotros*/
+
+.div-nos {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-nos img {
+    width: 70%;
+    margin: 1vw;
+ }
+
+
+/*Estilos pagina comprar*/
+.sec-compra{
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+}
+.lista {
+    line-height: 1.6;
+    margin: 20px;
+    font-size:large;
+}
+
+h3 {
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Estilos hacer pedidos*/
+
+
+.container-x {
+    margin: 0 20px;
+    
+}
+.nav-color {
+    background-color:lightgray;
+}
+
+.navengador {
+    margin-top: 20px;
+}
+
+.tab-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.prueba {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius:0 0 10px 10px;
+    border-color: transparent;
+    background-color: #FCDD63;
+    padding: 10px 0 20px 0;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    font-size: 1.75vh;
+    min-height: 30vh;
+}
+
+.control-pedido {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 0 10px 0;
+    width: 80%;
+    gap:2vh;
+}
+
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+.grids-form {
+    display: grid;
+    justify-content: start;
+    align-items: end;
+    gap: 2vh ;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    width: 80%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#gvMostrarProductos {
+    background-color: antiquewhite;
+    border: none;
+}
+
+.selec-sabor {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2vh 0;
+    width: 80%;
+}
+
+.btn-prod {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+}
+/* estilos visualisar pedidos*/
+.cuadro {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* estilos mi perfil */
+.perfil{
+    width:60%;
+}
+.img-perfil{
+    display:flex;
+    background-color: whitesmoke;
+    border-radius:100%;
+}
+.col-md-12 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* Estilos contacto*/
+.bg-contacto {
+    background-color: #DB8569;
+}
+/* Medias */
+@media (max-width: 1024px) {
+    .formcontent {
+        font-size: 1.5vw;
+        padding: 0 20px;
+        height: 100%;
+    }
+
+    .wrapper {
+    }
+
+    .titulo {
+        font-size: 2vw;
+        margin: 10px 0;
+    }
+
+    .inputs {
+        margin-bottom: 1vh;
+    }
+
+    .rec-cont {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 653px) {
+    .contenedor-imagen {
+        width: 40%;
+    }
+
+    .formcontent {
+        width: 35vh;
+        font-size: 1.5vh;
+    }
+
+    .titulo {
+        font-size: 2vh;
+        margin: 10px 0;
+    }
+
+    .inputs {
+        margin-bottom: 1vw;
+    }
+
+    .rec-cont {
+        font-size: 1.5vh;
+    }
+}
+
