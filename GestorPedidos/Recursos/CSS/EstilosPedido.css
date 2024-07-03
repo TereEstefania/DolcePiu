@@ -1,0 +1,8 @@
+﻿body {
+}
+
+.background-div {
+    background-color: #f0f0f0; /* Elige el color de fondo que prefieras */
+    padding: 20px; /* Opcional: para agregar espacio interno */
+    border-radius: 10px; /* Opcional: para bordes redondeados */
+}
