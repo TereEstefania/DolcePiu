@@ -23,7 +23,7 @@
         <img src="Recursos/img/logo_dolcepiu.png" alt="dolce piu" width="120" height="120" />
       </a>
      </div>
-    <div class="wrapper">
+    <div class="extra wrapper">
         <div class="formcontent">
            <form id="formulario_login" runat="server">
                 <div class="control">
